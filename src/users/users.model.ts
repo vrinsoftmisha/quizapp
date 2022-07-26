@@ -10,9 +10,6 @@ import {
 @Table
 export class Users extends Model {
   @Column
-  userName: string;
-
-  @Column
   email: string;
 
   @Column

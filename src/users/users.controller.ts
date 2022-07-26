@@ -7,13 +7,8 @@ export class UsersController {
 
   @Post('/create')
   async create(@Body() userData): Promise<any> {
-    return this.users.createUser(userData);
-  }
-
-  @Post('/login')
-  async login(@Request() req) {
     try {
-      return this.users.loginUser(req.body);
+      return this.users.createUser(userData);
     } catch (error) {}
   }
 }
