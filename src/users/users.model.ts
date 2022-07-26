@@ -1,11 +1,4 @@
-import {
-  Column,
-  IsUUID,
-  Length,
-  Model,
-  PrimaryKey,
-  Table,
-} from 'sequelize-typescript';
+import { Column, Length, Model, Table } from 'sequelize-typescript';
 
 @Table
 export class Users extends Model {
